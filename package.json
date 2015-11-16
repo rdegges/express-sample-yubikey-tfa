@@ -1,0 +1,31 @@
+{
+  "name": "express-sample-yubikey-tfa",
+  "version": "1.0.0",
+  "description": "An example Express.js website using Yubikey for Two Factor Authentication.",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "express-stormpath": "^2.2.0",
+    "yubikey": "^0.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rdegges/express-sample-yubikey-tfa.git"
+  },
+  "keywords": [
+    "yubikey",
+    "tfa",
+    "authentication",
+    "stormpath"
+  ],
+  "author": "Randall Degges",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/rdegges/express-sample-yubikey-tfa/issues"
+  },
+  "homepage": "https://github.com/rdegges/express-sample-yubikey-tfa#readme"
+}
