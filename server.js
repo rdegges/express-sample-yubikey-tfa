@@ -14,6 +14,7 @@ app.use(require('./middleware/tfa'));
 
 // Routes
 app.use(require('./routes/index'));
+app.use(require('./routes/tfa'));
 
 // Server
 app.on('stormpath.ready', function() {
