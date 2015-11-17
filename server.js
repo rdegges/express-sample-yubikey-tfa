@@ -5,6 +5,9 @@ var stormpath = require('express-stormpath');
 
 var app = express();
 
+// Application Settings
+app.set('view engine', 'jade');
+
 // Middleware
 app.use(require('./middleware/stormpath')(app));
 
