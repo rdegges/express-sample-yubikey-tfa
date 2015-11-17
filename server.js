@@ -10,6 +10,7 @@ app.set('view engine', 'jade');
 
 // Middleware
 app.use(require('./middleware/stormpath')(app));
+app.use(require('./middleware/tfa'));
 
 // Routes
 app.use(require('./routes/index'));
