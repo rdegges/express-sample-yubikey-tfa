@@ -4,8 +4,10 @@
   "description": "An example Express.js website using Yubikey for Two Factor Authentication.",
   "main": "server.js",
   "dependencies": {
+    "body-parser": "^1.14.1",
     "express": "^4.13.3",
     "express-stormpath": "^2.2.0",
+    "jade": "^1.11.0",
     "yubikey": "^0.0.2"
   },
   "devDependencies": {},
