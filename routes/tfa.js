@@ -10,11 +10,11 @@ var router = express.Router();
 
 router.use(bodyParser.urlencoded({ extended: true }));
 
-router.get('/connect', stormpath.loginRequired, function(req, res) {
+router.get('/register', stormpath.loginRequired, function(req, res) {
   res.render('tfa-register');
 });
 
-router.post('/connect', stormpath.loginRequired, function(req, res) {
+router.post('/register', stormpath.loginRequired, function(req, res) {
   var config = req.app.get('stormpathConfig');
   var otp = req.body.otp;
 
