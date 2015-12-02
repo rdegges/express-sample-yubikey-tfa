@@ -16,8 +16,21 @@ module.exports = function(app) {
     },
     website: true,
     postRegistrationHandler: function(account, req, res, next) {
-      // Redirect to the Yubikey device registration page.
-      res.redirect('/connect');
+      account.getCustomData(function(err, data) {
+        if (err) {
+          return next(err);
+        }
+
+        data.yubikeyUserId = null;
+        data.save(function(err) {
+          if (err) {
+            return next(err);
+          }
+
+          // Redirect to the Yubikey device registration page.
+          res.redirect('/tfa/register');
+        });
+      });
     }
   });
 }
