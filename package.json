@@ -4,6 +4,7 @@
   "description": "An example Express.js website using Yubikey for Two Factor Authentication.",
   "main": "server.js",
   "dependencies": {
+    "async": "^1.5.0",
     "body-parser": "^1.14.1",
     "express": "^4.13.3",
     "express-stormpath": "^2.3.0",
