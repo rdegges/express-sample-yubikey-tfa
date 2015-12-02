@@ -10,11 +10,17 @@ module.exports = function(app) {
       customData: true
     },
     web: {
+      login: {
+        enabled: true
+      },
+      logout: {
+        enabled: false
+      },
       register: {
-        autoLogin: true
+        autoLogin: true,
+        enabled: true
       }
     },
-    website: true,
     postRegistrationHandler: function(account, req, res, next) {
       account.getCustomData(function(err, data) {
         if (err) {
